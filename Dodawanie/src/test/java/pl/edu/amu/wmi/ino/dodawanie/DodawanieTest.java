@@ -37,4 +37,21 @@ public class DodawanieTest {
         assertEquals(expResult, result);
     }
     
+    @Test
+    public void testDodaj3() {
+        System.out.println("randomAdd");
+        
+        for(int i = 0 ; i<100;i++){
+            for(int j=0 ;j<100;j++){
+                String a = ""+i;
+                String b = ""+j;
+                String expResult = ""+(i+j);
+                String result = Dodawanie.dodaj(a, b);
+                assertEquals(expResult, result);
+            }
+        }
+
+    }
+    
+    
 }
