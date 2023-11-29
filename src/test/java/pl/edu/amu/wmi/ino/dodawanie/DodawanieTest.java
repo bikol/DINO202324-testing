@@ -54,4 +54,24 @@ public class DodawanieTest {
     }
     
     
+    @Test
+    public void testDodajNull() {
+        System.out.println("dodajDefenicja");
+        String a = null;
+        String b = null;
+        String expResult = "";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testDodajempty() {
+        System.out.println("dodaj2");
+        String a = "";
+        String b = "";
+        String expResult = "";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+    
 }
