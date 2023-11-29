@@ -11,11 +11,18 @@ package pl.edu.amu.wmi.ino.dodawanie;
  */
 public class Dodawanie {
     public static String dodaj(String a, String b){
-        
-        if(a == null && b==null)
-            return "";
-        else if(a=="" && b=="")
-            return "";
-        return ""+(Integer.parseInt(b) + Integer.parseInt(a));
+        String result = "";
+        if(a != null && b != null){
+            if(a == "NaN" || b == "NaN"){
+                result = "NaN";
+            }
+            else if(a.matches("[0-9]+") && b.matches("[0-9]+")){
+                result = ""+(Integer.parseInt(b) + Integer.parseInt(a));
+            }
+            else if(a.matches("[0-9]+.[0-9]+") && b.matches("[0-9]+.[0-9]+")){
+                result = ""+(Float.parseFloat(b) + Float.parseFloat(a));
+            }
+        }
+        return result;
     }
 }

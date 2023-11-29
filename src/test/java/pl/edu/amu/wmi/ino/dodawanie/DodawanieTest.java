@@ -73,5 +73,25 @@ public class DodawanieTest {
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
+
+    @Test
+    public void testDodajFloat() {
+        System.out.println("dodajFloat");
+        String a = "5.5";
+        String b = "10.5";
+        String expResult = "16.0";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
     
+    @Test
+    public void testDodajNaN() {
+        System.out.println("dodajNaN");
+        String a = "NaN";
+        String b = "NaN";
+        String expResult = "NaN";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
 }
