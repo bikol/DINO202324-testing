@@ -54,4 +54,24 @@ public class DodawanieTest {
     }
     
     
+    @Test
+    public void testDodajDefinicja() {
+        System.out.println("dodajDefenicja");
+        String a = "";
+        String b = "";
+        String expResult = "Dodawanie – wspólna nazwa różnych działań matematycznych, zdefiniowanych na różnych zbiorach i klasach, m.in. tych liczbowych, ale też dla wektorów, niektórych funkcji i części innych zbiorów. ";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testDodajPajtona() {
+        System.out.println("dodaj2");
+        String a = "Pajton";
+        String b = "C";
+        String expResult = "Nie dotykaj Pajtona, bo cie ugryzie.";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+    
 }
