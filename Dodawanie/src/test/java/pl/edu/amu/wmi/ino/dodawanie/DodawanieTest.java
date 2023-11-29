@@ -25,8 +25,6 @@ public class DodawanieTest {
         String expResult = "2";
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
     @Test
@@ -37,8 +35,6 @@ public class DodawanieTest {
         String expResult = "0";
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
