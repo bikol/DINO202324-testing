@@ -73,5 +73,23 @@ public class DodawanieTest {
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
+    @Test
+    public void Dodajeplusplus() {
+        System.out.println("dodajplusplus");
+        String a = "1";
+        String b = "+";
+        String expResult = "2";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+    @Test
+    public void Dodajenic() {
+        System.out.println("dodajminus");
+        String a = "1";
+        String b = "";
+        String expResult = "1";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
     
 }
