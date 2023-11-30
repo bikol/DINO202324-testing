@@ -76,11 +76,11 @@ public class DodawanieTest {
         assertEquals(expResult, result);
     }
     @Test
-    public void testBinaryAddition(){
-        System.out.println("BinaryAddition");
+    public void testBinaryAdditionBiggerThan7(){
+        System.out.println("BinaryAdditionBiggerThan7");
         String a = "1111";
         String b = "1000";
-        String expResult = "10111";
+        String expResult = "23";
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
@@ -88,12 +88,13 @@ public class DodawanieTest {
     @Test
     public void testRomanNumbers(){
         System.out.println("RomanNumbers");
-        String a = "X";
-        String b = "I";
+        String a = "I";
+        String b = "X";
         String expResult = "11";
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
+
 
 
 
