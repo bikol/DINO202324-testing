@@ -6,6 +6,8 @@
 package pl.edu.amu.wmi.ino.dodawanie;
 
 import org.junit.jupiter.api.Test;
+import org.junit.platform.engine.support.descriptor.FileSystemSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -73,5 +75,31 @@ public class DodawanieTest {
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
+    @Test
+    public void testBinaryAdditionBiggerThan7(){
+        System.out.println("BinaryAdditionBiggerThan7");
+        String a = "1111";
+        String b = "1000";
+        String expResult = "23";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testRomanNumbers(){
+        System.out.println("RomanNumbers");
+        String a = "I";
+        String b = "X";
+        String expResult = "11";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
+
+
+
+
+
+
     
 }
