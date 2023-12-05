@@ -16,6 +16,10 @@ public class Dodawanie {
             return "";
         else if(a=="" && b=="")
             return "";
+        else if(a==null && b!=null)
+            return b;
+        else if(a!=null && b==null)
+            return a;
         return ""+(Integer.parseInt(b) + Integer.parseInt(a));
     }
 }
