@@ -13,7 +13,13 @@ public class Dodawanie {
     public static String dodaj(String a, String b){
         if(a == null || b == null)
             return null;
+        if(!isNumeric(a))
+            a = "0";
+        if(!isNumeric(b))
+            b = "0";
         return ""+(Integer.parseInt(b) + Integer.parseInt(a));
     }
-
+    private static boolean isNumeric(String str) {
+        return str.matches("-?\\d+");
+    }
 }
