@@ -11,12 +11,15 @@ package pl.edu.amu.wmi.ino.dodawanie;
  */
 public class Dodawanie {
     public static String dodaj(String a, String b){
-        if(a == null || b == null)
-            return null;
         if(!isNumeric(a))
             a = "0";
         if(!isNumeric(b))
             b = "0";
+        
+        if(a == null && b==null)
+            return "";
+        else if(a=="" && b=="")
+            return "";
         return ""+(Integer.parseInt(b) + Integer.parseInt(a));
     }
     private static boolean isNumeric(String str) {
