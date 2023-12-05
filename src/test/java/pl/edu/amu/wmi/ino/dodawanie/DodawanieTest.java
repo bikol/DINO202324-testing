@@ -68,5 +68,24 @@ public class DodawanieTest {
         String result = Dodawanie.dodaj(a,null);
         assertNull(result);
     }
-    
+
+    @Test
+    public void testDodajNegativeNumbers() {
+        System.out.println("testDodajNegativeNumbers");
+        String a = "-5";
+        String b = "3";
+        String expResult = "-2";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testDodajMixedNumeric() {
+        String a = "12";
+        String b = "ab3";
+        String expResult = "12"; // For mixed numeric and non-numeric inputs, considering only the numeric part.
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
 }

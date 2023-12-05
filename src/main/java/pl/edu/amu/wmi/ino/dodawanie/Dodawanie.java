@@ -15,4 +15,5 @@ public class Dodawanie {
             return null;
         return ""+(Integer.parseInt(b) + Integer.parseInt(a));
     }
+
 }
