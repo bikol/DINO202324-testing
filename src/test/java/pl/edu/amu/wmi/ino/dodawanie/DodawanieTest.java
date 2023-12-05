@@ -5,7 +5,10 @@
  */
 package pl.edu.amu.wmi.ino.dodawanie;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -50,8 +53,20 @@ public class DodawanieTest {
                 assertEquals(expResult, result);
             }
         }
-
     }
-    
+
+    @Test
+    public void testDodajNull(){
+        String a = "4";
+        String result = Dodawanie.dodaj(null,a);
+        assertNull(result);
+    }
+
+    @Test
+    public void testDodajNull2(){
+        String a = "4";
+        String result = Dodawanie.dodaj(a,null);
+        assertNull(result);
+    }
     
 }

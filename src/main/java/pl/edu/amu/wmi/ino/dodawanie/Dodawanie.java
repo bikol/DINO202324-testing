@@ -11,6 +11,7 @@ package pl.edu.amu.wmi.ino.dodawanie;
  */
 public class Dodawanie {
     public static String dodaj(String a, String b){
+
         return ""+(Integer.parseInt(b) + Integer.parseInt(a));
     }
 }
