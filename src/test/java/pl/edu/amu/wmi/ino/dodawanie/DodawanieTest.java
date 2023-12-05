@@ -73,5 +73,27 @@ public class DodawanieTest {
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
+
+    @Test
+    public void testDodajStringEmpty(){
+        System.out.println("Dodaj string i null");
+        String a=null;
+        String b="ABC";
+        String expResult="ABC";
+        String result= Dodawanie.dodaj(a,b);
+        assertEquals(expResult,result);
+
+    }
+
+    @Test
+    public void testDodajStringEmpty2(){
+        System.out.println("Dodaj string i null");
+        String a="ABC";
+        String b=null;
+        String expResult="ABC";
+        String result= Dodawanie.dodaj(a,b);
+        assertEquals(expResult,result);
+
+    }
     
 }
