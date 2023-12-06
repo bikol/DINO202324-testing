@@ -73,5 +73,25 @@ public class DodawanieTest {
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
+
+    @Test
+    public void testPineapple() {
+        System.out.println("testPineapple");
+        String a = "pen";
+        String b = "pineapple";
+        String expResult = "penpineapple";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testApple() {
+        System.out.println("testApple");
+        String a = "apple";
+        String b = "pen";
+        String expResult = "applepen";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
     
 }
