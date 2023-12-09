@@ -68,7 +68,7 @@ public class DodawanieTest {
     public void testDodajMixedNumeric() {
         String a = "12";
         String b = "ab3";
-        String expResult = "12"; // For mixed numeric and non-numeric inputs, considering only the numeric part.
+        String expResult = "12";
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }   
