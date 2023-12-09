@@ -5,7 +5,10 @@
  */
 package pl.edu.amu.wmi.ino.dodawanie;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -50,10 +53,26 @@ public class DodawanieTest {
                 assertEquals(expResult, result);
             }
         }
-
     }
-    
-    
+
+    @Test
+    public void testDodajNegativeNumbers() {
+        System.out.println("testDodajNegativeNumbers");
+        String a = "-5";
+        String b = "3";
+        String expResult = "-2";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testDodajMixedNumeric() {
+        String a = "12";
+        String b = "ab3";
+        String expResult = "12";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
     @Test
     public void testDodajNull() {
         System.out.println("dodajDefenicja");
@@ -63,7 +82,7 @@ public class DodawanieTest {
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     public void testDodajempty() {
         System.out.println("dodaj2");
@@ -73,5 +92,5 @@ public class DodawanieTest {
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
-    
+
 }
