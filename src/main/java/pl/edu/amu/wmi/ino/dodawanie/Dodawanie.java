@@ -15,9 +15,9 @@ public class Dodawanie {
             return "";
         else if(a=="" && b=="")
             return "";
-        if(!isNumeric(a))
+        if(a != null && !isNumeric(a))
             a = "0";
-        if(!isNumeric(b))
+        if(b != null && !isNumeric(b))
             b = "0";
         return ""+(Integer.parseInt(b) + Integer.parseInt(a));
     }
