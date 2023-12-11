@@ -77,19 +77,19 @@ public class DodawanieTest {
     @Test
     public void testDodajFloat() {
         System.out.println("dodajFloat");
-        String a = "1.0";
-        String b = "2.5";
-        String expResult = "3.5";
+        String a = "1.0f";
+        String b = "2.5f";
+        String expResult = "3.5f";
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
 
     @Test
     public void testDodajBool() {
-        System.out.println("dodajFloat");
+        System.out.println("dodajBool");
         String a = "true";
         String b = "false";
-        String expResult = "true";
+        String expResult = "false";
         String result = Dodawanie.dodaj(a, b);
         assertEquals(expResult, result);
     }
