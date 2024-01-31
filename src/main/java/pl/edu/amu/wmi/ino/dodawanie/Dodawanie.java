@@ -28,7 +28,12 @@ public class Dodawanie {
             else if(a == "Fire" && b == "firework"){
                 return "boom";
             }
-
+            else if(a=="Inzynieria" && b =="Oprogramowania"){
+                return a + b;
+            }
+            else if(a == "Fire" && b == "firework"){
+                return "boom";
+            }
         }
         return result;
     }
