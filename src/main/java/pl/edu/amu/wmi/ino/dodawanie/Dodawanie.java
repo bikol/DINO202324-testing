@@ -22,6 +22,13 @@ public class Dodawanie {
             else if(a.matches("[0-9]+.[0-9]+") && b.matches("[0-9]+.[0-9]+")){
                 result = ""+(Float.parseFloat(b) + Float.parseFloat(a));
             }
+            else if(a=="Inzynieria" && b =="Oprogramowania"){
+                return a + b;
+                }
+            else if(a == "Fire" && b == "firework"){
+                return "boom";
+            }
+
         }
         return result;
     }
