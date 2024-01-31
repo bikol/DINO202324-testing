@@ -52,8 +52,26 @@ public class DodawanieTest {
         }
 
     }
-    
-    
+    @Test
+    public void testDodajFire() {
+        System.out.println("testDodajFire");
+        String a = "Fire";
+        String b = "firework";
+        String expResult = "boom";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
+     @Test
+    public void testDodajLiczby() {
+        System.out.println("testDodajLiczby");
+        String a = "Inzynieria";
+        String b = "Oprogramowania";
+        String expResult = "InzynieriaOprogramowania";
+        String result = Dodawanie.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
     @Test
     public void testDodajNull() {
         System.out.println("dodajDefenicja");
